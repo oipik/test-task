@@ -17,7 +17,7 @@ const month = new Date().getMonth() + 1;
 const day = new Date().getDate();
 const date = year + (month < 10 ? '0' + month : month) + (day < 10 ? '0' + day : day);
 
-const url = "http://api.valantis.store:40000/";
+const url = "https://api.valantis.store:41000/";
 const headers = {
   "Content-Type": "application/json",
   "X-Auth": md5(`Valantis_${date}`)
